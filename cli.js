@@ -1,6 +1,6 @@
-import chalk from 'chalk'
-import { getLinksFromFile } from './index.js'
-import { urlsValidation } from './http-validation.js'
+const chalk = require('chalk')
+const getLinksFromFile = require('./index.js')
+const urlsValidation = require('./http-validation.js')
 
 const cli = process.argv
 

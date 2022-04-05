@@ -1,4 +1,4 @@
-import fetch from "node-fetch"
+const fetch = require('node-fetch')
 
 async function statusCheck(arrayURLs) {
     try {
@@ -32,4 +32,4 @@ async function urlsValidation(linksArray) {
     return results
 }
 
-export { urlsValidation }
+module.exports = urlsValidation

@@ -1,5 +1,5 @@
-import chalk from 'chalk';
-import fs from 'fs'
+const chalk = require('chalk')
+const fs = require('fs')
 
 function extractLinks(text){
     const regex = /\[([^\]]*)\]\((https?:\/\/[^$#\s].[^\s]*)\)/gm
@@ -26,4 +26,4 @@ async function getLinksFromFile(filePath){
     }
 }
 
-export { getLinksFromFile }
+module.exports = getLinksFromFile
