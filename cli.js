@@ -8,9 +8,9 @@ async function processCLI(cli){
     const result = await getLinksFromFile(cli[2])
 
     if(cli[3] === 'validate'){
-        console.log(chalk.yellow('Links Validados'), await urlsValidation(result))
+        console.log(chalk.yellow('Valided links'), await urlsValidation(result))
     } else {
-        console.log(chalk.yellow('Lista de Links'), resultado)
+        console.log(chalk.yellow('List of links'), resultado)
     }
 }
 

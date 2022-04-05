@@ -13,7 +13,7 @@ function extractLinks(text){
         })       
     }
 
-    return resultArray.length === 0 ? 'Não há links' : resultArray
+    return resultArray.length === 0 ? 'there are no links' : resultArray
 }
 
 async function getLinksFromFile(filePath){
@@ -22,7 +22,7 @@ async function getLinksFromFile(filePath){
         const text = await fs.promises.readFile(filePath, encoding)
         return extractLinks(text)
     } catch(erro) {
-        throw new Error(chalk.red(erro.code, 'não há arquivo no caminho'))
+        throw new Error(chalk.red(erro.code, 'there is no file in the path'))
     }
 }
 
