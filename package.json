@@ -1,13 +1,20 @@
 {
   "name": "md-links-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My first lib made to show the links in markdown format and validate if they are working.",
   "main": "./cli.js",
   "scripts": {
     "test": "jest ./test",
     "cli": "node cli.js ./mock/text1.md"
   },
-  "keywords": ["markdown", "md", ".md", "links", "url", "validation"],
+  "keywords": [
+    "markdown",
+    "md",
+    ".md",
+    "links",
+    "url",
+    "validation"
+  ],
   "author": "Eduardo L. Coar <dev.eduardo.lc@gmail.com> (https://github.com/duduCMT)",
   "bugs": "https://github.com/duduCMT/NodeJS-Lib-Links-Markdown/issues",
   "license": "ISC",
